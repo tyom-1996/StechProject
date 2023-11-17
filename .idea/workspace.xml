@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2c8e790e-0c5e-4bfa-a460-4864a2eb969e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/StechApp.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2Pk73Et8bIL9Wm0n5YrVrrjRsRS" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Applications\StechApp_GITHUB\assets" />
+      <recent name="E:\Applications\StechApp_GITHUB" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2c8e790e-0c5e-4bfa-a460-4864a2eb969e" name="Default Changelist" comment="" />
+      <created>1683988272746</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1683988272746</updated>
+      <workItem from="1683988273916" duration="596000" />
+      <workItem from="1683989029010" duration="22000" />
+      <workItem from="1683989052491" duration="899000" />
+      <workItem from="1684246276786" duration="2850000" />
+      <workItem from="1684259569274" duration="135000" />
+      <workItem from="1684273942667" duration="1208000" />
+      <workItem from="1684333377088" duration="146000" />
+      <workItem from="1684745473454" duration="2045000" />
+      <workItem from="1684846880322" duration="17020000" />
+      <workItem from="1685087519715" duration="3741000" />
+      <workItem from="1685095623879" duration="17684000" />
+      <workItem from="1685801021532" duration="5478000" />
+      <workItem from="1685948642828" duration="24691000" />
+      <workItem from="1686122306035" duration="7666000" />
+      <workItem from="1686292367337" duration="12338000" />
+      <workItem from="1686322138266" duration="1308000" />
+      <workItem from="1686564462521" duration="7062000" />
+      <workItem from="1686642237779" duration="14465000" />
+      <workItem from="1686742079038" duration="8024000" />
+      <workItem from="1686818524221" duration="17630000" />
+      <workItem from="1686934502308" duration="83000" />
+      <workItem from="1687171833071" duration="8462000" />
+      <workItem from="1687254122166" duration="60000" />
+      <workItem from="1687346253371" duration="8650000" />
+      <workItem from="1687359252915" duration="1688000" />
+      <workItem from="1687620283205" duration="2869000" />
+      <workItem from="1687630117760" duration="5842000" />
+      <workItem from="1687698590470" duration="1155000" />
+      <workItem from="1687704806889" duration="1525000" />
+      <workItem from="1687784418311" duration="327000" />
+      <workItem from="1687869322103" duration="356000" />
+      <workItem from="1687869714605" duration="3369000" />
+      <workItem from="1687981701550" duration="1670000" />
+      <workItem from="1688021653136" duration="281000" />
+      <workItem from="1688113814379" duration="1968000" />
+      <workItem from="1688143296199" duration="406000" />
+      <workItem from="1688143715225" duration="1820000" />
+      <workItem from="1688464783671" duration="1053000" />
+      <workItem from="1688544750238" duration="7412000" />
+      <workItem from="1688583071705" duration="731000" />
+      <workItem from="1688653836153" duration="2127000" />
+      <workItem from="1688718878255" duration="25053000" />
+      <workItem from="1688821355927" duration="11582000" />
+      <workItem from="1688987532719" duration="705000" />
+      <workItem from="1689260146003" duration="1643000" />
+      <workItem from="1689321238764" duration="15841000" />
+      <workItem from="1689593881108" duration="4324000" />
+      <workItem from="1689614420428" duration="664000" />
+      <workItem from="1689684123525" duration="7965000" />
+      <workItem from="1689750762850" duration="1646000" />
+      <workItem from="1689789028090" duration="1433000" />
+      <workItem from="1689843662195" duration="30688000" />
+      <workItem from="1689938477453" duration="633000" />
+      <workItem from="1689946101305" duration="5569000" />
+      <workItem from="1690186049520" duration="7801000" />
+      <workItem from="1690288158614" duration="2234000" />
+      <workItem from="1690722203835" duration="2477000" />
+      <workItem from="1690885775653" duration="604000" />
+      <workItem from="1690898041592" duration="4860000" />
+      <workItem from="1690964131376" duration="7053000" />
+      <workItem from="1690981739085" duration="1264000" />
+      <workItem from="1691155760825" duration="10575000" />
+      <workItem from="1691416229434" duration="3890000" />
+      <workItem from="1691652653288" duration="4749000" />
+      <workItem from="1691668805614" duration="3270000" />
+      <workItem from="1691748287591" duration="1498000" />
+      <workItem from="1691784796461" duration="509000" />
+      <workItem from="1691787194235" duration="921000" />
+      <workItem from="1691836416497" duration="9000" />
+      <workItem from="1692006574694" duration="1054000" />
+      <workItem from="1692009875094" duration="227000" />
+      <workItem from="1692026764708" duration="1751000" />
+      <workItem from="1692338510916" duration="690000" />
+      <workItem from="1692699735812" duration="13012000" />
+      <workItem from="1692957825870" duration="10810000" />
+      <workItem from="1693060941448" duration="3082000" />
+      <workItem from="1693083745930" duration="3368000" />
+      <workItem from="1693223730847" duration="19170000" />
+      <workItem from="1693373631405" duration="1363000" />
+      <workItem from="1693396952879" duration="12540000" />
+      <workItem from="1693479232370" duration="1671000" />
+      <workItem from="1693495660895" duration="1512000" />
+      <workItem from="1693559220062" duration="6318000" />
+      <workItem from="1693811052871" duration="9769000" />
+      <workItem from="1693902834934" duration="7362000" />
+      <workItem from="1693986711207" duration="10727000" />
+      <workItem from="1694170012598" duration="6889000" />
+      <workItem from="1694427776862" duration="5552000" />
+      <workItem from="1694518678749" duration="11384000" />
+      <workItem from="1694675655529" duration="5968000" />
+      <workItem from="1694707938200" duration="2564000" />
+      <workItem from="1694768369342" duration="3055000" />
+      <workItem from="1694777120079" duration="272000" />
+      <workItem from="1694777874847" duration="8094000" />
+      <workItem from="1694796739400" duration="1812000" />
+      <workItem from="1695048504535" duration="7620000" />
+      <workItem from="1695202004141" duration="3690000" />
+      <workItem from="1695998941000" duration="3173000" />
+      <workItem from="1696254330951" duration="355000" />
+      <workItem from="1697026277846" duration="897000" />
+      <workItem from="1697528628072" duration="10500000" />
+      <workItem from="1697662373496" duration="48000" />
+      <workItem from="1697709535546" duration="14531000" />
+      <workItem from="1697734851972" duration="1206000" />
+      <workItem from="1697793514985" duration="13381000" />
+      <workItem from="1698753948198" duration="8449000" />
+      <workItem from="1698854777559" duration="8086000" />
+      <workItem from="1699277242178" duration="2181000" />
+      <workItem from="1699343456365" duration="75000" />
+      <workItem from="1699632883987" duration="21002000" />
+      <workItem from="1699857718796" duration="414000" />
+      <workItem from="1699873197727" duration="2532000" />
+      <workItem from="1700042064060" duration="2553000" />
+      <workItem from="1700147369502" duration="39000" />
+      <workItem from="1700157823881" duration="1662000" />
+      <workItem from="1700177006829" duration="1210000" />
+      <workItem from="1700215865012" duration="635000" />
+      <workItem from="1700229537819" duration="614000" />
+      <workItem from="1700231113359" duration="775000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="477" y="210" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1694601265711">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="477" y="210" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.816@0.0.1536.816" timestamp="1694601265711" />
+    <state x="549" y="163" key="FileChooserDialogImpl" timestamp="1700231940479">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="549" y="163" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1700231940479" />
+    <state x="397" y="132" width="579" height="558" key="find.popup" timestamp="1699815849984">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="397" y="132" width="579" height="558" key="find.popup/0.0.1536.816@0.0.1536.816" timestamp="1699815849984" />
+    <state x="425" y="185" key="run.anything.popup" timestamp="1699815155279">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="425" y="185" key="run.anything.popup/0.0.1536.816@0.0.1536.816" timestamp="1699815155279" />
+    <state x="431" y="137" width="672" height="678" key="search.everywhere.popup" timestamp="1699649594013">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="431" y="137" width="672" height="678" key="search.everywhere.popup/0.0.1536.816@0.0.1536.816" timestamp="1699649594013" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/components/unlogged_user/sign_up_as_client/sign_up_as_client.js</url>
+          <line>1529</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/components/profile/client/edit_client_personal_area.js</url>
+          <line>1902</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/components/profile/executor/executor_tenders_chat.js</url>
+          <line>617</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/components/profile/client/executors_lists.js</url>
+          <line>1205</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/components/profile/client/executors_lists.js</url>
+          <line>859</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/components/profile/client/executors_lists.js</url>
+          <line>1304</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/components/unlogged_user/sign_up_as_client/sign_up_as_client.js</url>
+          <line>775</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/components/unlogged_user/sign_up_as_executor/sign_up_as_executor.js</url>
+          <line>1872</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/components/unlogged_user/new_password.js</url>
+          <line>68</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/components/unlogged_user/sign_up_as_executor/sign_up_as_executor.js</url>
+          <line>2097</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/components/unlogged_user/sign_up_as_executor/sign_up_as_executor.js</url>
+          <line>2098</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/components/unlogged_user/sign_up_as_executor/sign_up_as_executor.js</url>
+          <line>1789</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/components/profile/executor/personal_area_executor.js</url>
+          <line>329</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/components/includes/JobVoyage.js</url>
+          <line>390</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/components/unlogged_user/sign_up_as_executor/sign_up_as_executor.js</url>
+          <line>1812</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/components/unlogged_user/sign_up_as_executor/sign_up_as_executor.js</url>
+          <line>2330</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/components/profile/client/client_catalogue_main_page.js</url>
+          <line>3931</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/components/profile/client/executors_lists.js</url>
+          <line>1410</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/components/profile/client/personal_area.js</url>
+          <line>584</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/components/profile/client/catalogue_product_single_page.js</url>
+          <line>278</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/components/unlogged_user/sign_up_as_executor/sign_up_as_executor.js</url>
+          <line>1377</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/components/profile/executor/executor_catalogue_main_page.js</url>
+          <line>969</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/components/profile/client/client_notifications.js</url>
+          <line>543</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/components/profile/client/executors_lists.js</url>
+          <line>647</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/components/profile/executor/personal_area_executor.js</url>
+          <line>54</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

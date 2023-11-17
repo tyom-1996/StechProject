@@ -1,1 +1,0 @@
-# StechApp_GITHUB
