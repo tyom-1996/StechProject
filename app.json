@@ -1,0 +1,83 @@
+{
+  "expo": {
+    "name": "StechGroup",
+    "slug": "Stech",
+    "version": "21.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/logo.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/images/splash_screen.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#000000"
+    },
+    "notification":{
+      "icon":"./assets/images/logo.png",
+      "sounds": ["./assets/push_notification_sound.wav"]
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.JustCodeLLC.Stech",
+      "buildNumber": "11.0.0",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Этому приложению требуется доступ к данным о вашем местоположении, для корректной работы карты",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "Этому приложению требуется доступ к данным о вашем местоположении, для корректной работы карты",
+        "NSLocationAlwaysUsageDescription": "Этому приложению требуется доступ к данным о вашем местоположении, для корректной работы карты",
+        "UIBackgroundModes": [
+          "remote-notification"
+        ]
+      },
+      "config": {
+        "googleMapsApiKey": "AIzaSyAvTddoHzPpejdOPc3kX6-EBvZcAmD_sFg"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/logo.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "package": "com.JustCodeLLC.Stech",
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyAvTddoHzPpejdOPc3kX6-EBvZcAmD_sFg"
+
+        }
+      },
+      "permissions": [
+        "CAMERA",
+        "ACCESS_FINE_LOCATION",
+        "READ_EXTERNAL_STORAGE",
+        "NOTIFICATIONS"
+      ],
+      "googleServicesFile": "./google-services.json",
+      "useNextNotificationsApi": true,
+      "versionCode": 21
+
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to let you share them with your friends."
+        }
+      ]
+    ],
+
+    "description": "",
+    "extra": {
+      "eas": {
+        "projectId": "f4dc05ce-f779-4614-a0f9-3e4216ff5843"
+      }
+    }
+  }
+}

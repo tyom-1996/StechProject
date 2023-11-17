@@ -1,1 +1,1 @@
-# StechProject
+# StechApp_GITHUB

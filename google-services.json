@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "82147621777",
+    "project_id": "stech-e8ea1",
+    "storage_bucket": "stech-e8ea1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:82147621777:android:b20adea9e48464d9dc3830",
+        "android_client_info": {
+          "package_name": "com.JustCodeLLC.Stech"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "82147621777-kpp2f29rm6vgrp3ahk294f18bghb2vsj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADik3MPyP5DubYzc8ZymStaw9frmlVRE8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "82147621777-kpp2f29rm6vgrp3ahk294f18bghb2vsj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
