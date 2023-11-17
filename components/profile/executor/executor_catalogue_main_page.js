@@ -316,9 +316,9 @@ export default class App extends Component {
 
     openMap = async () => {
 
-        // await this.setState({
-        //     loaded_map: false,
-        // })
+        await this.setState({
+            loaded_map: true,
+        })
 
 
         let { status } = await Location.requestForegroundPermissionsAsync();
@@ -339,7 +339,7 @@ export default class App extends Component {
                 latitudeDelta: 0.01,
                 longitudeDelta: 0.01,
             },
-            loaded_map: true,
+            loaded_map: false,
         })
 
 
@@ -998,7 +998,7 @@ export default class App extends Component {
 
 
 
-                {!this.state.loaded_map &&
+                {this.state.loaded_map &&
                 <View style={{backgroundColor: '#ffffff', justifyContent: 'center', alignItems: 'center', alignSelf: 'center', width: '100%',  height: windowHeight - 210, position:'absolute', top: this.state.catalog_header_height - 70 }}>
                     <ActivityIndicator size="large" color="#FF6600" />
 
@@ -1006,13 +1006,16 @@ export default class App extends Component {
                 }
 
 
+                {!this.state.loaded_map &&
 
-
-                {/*{this.state.loaded_map &&*/}
-
-                <View style={{width: '100%',  height: windowHeight - 180, position:'absolute', top: this.state.catalog_header_height - 2 }}>
+                <View style={{
+                    width: '100%',
+                    height: windowHeight - 180,
+                    position: 'absolute',
+                    top: this.state.catalog_header_height - 2
+                }}>
                     <MapView
-                        style={{ flex: 1,width:'100%', height:'100%', zIndex: 2}}
+                        style={{flex: 1, width: '100%', height: '100%', zIndex: 2}}
                         // initialRegion={this.state.initialRegion}
                         region={this.state.initialRegion}
                         // provider='google'
@@ -1042,8 +1045,7 @@ export default class App extends Component {
                     </MapView>
 
 
-
-                    <View style={[styles.map_buttons_wrapper,  {bottom: Platform.OS === 'ios' ? 75 : 50}]}>
+                    <View style={[styles.map_buttons_wrapper, {bottom: Platform.OS === 'ios' ? 75 : 50}]}>
                         <TouchableOpacity
                             onPress={() => {
                                 this.redirectToJobTender()
@@ -1096,21 +1098,21 @@ export default class App extends Component {
 
                         <View style={styles.create_order_btn_box}>
                             {this.state.show_online_text &&
-                                <View style={styles.create_order_btn}>
-                                    <Text style={styles.create_order_btn_text}>Вы на линии</Text>
-                                </View>
+                            <View style={styles.create_order_btn}>
+                                <Text style={styles.create_order_btn_text}>Вы на линии</Text>
+                            </View>
                             }
                             {this.state.show_online_text_balance &&
-                                <TouchableOpacity
-                                    style={styles.add_balance_btn}
-                                    onPress={() => {
-                                        this.setState({
-                                            onlinePaymentMethodPopup: true,
-                                        })
-                                    }}
-                                >
-                                    <Text style={styles.create_order_btn_text}>Пополните баланс</Text>
-                                </TouchableOpacity>
+                            <TouchableOpacity
+                                style={styles.add_balance_btn}
+                                onPress={() => {
+                                    this.setState({
+                                        onlinePaymentMethodPopup: true,
+                                    })
+                                }}
+                            >
+                                <Text style={styles.create_order_btn_text}>Пополните баланс</Text>
+                            </TouchableOpacity>
 
                             }
 
@@ -1119,92 +1121,94 @@ export default class App extends Component {
 
                         {/*<TouchableOpacity onPress={() => {this.getGeolocation()}}>*/}
 
-                            {/*{!this.state.user_online_on_the_map && this.state.show_online_switch_button &&*/}
-                            {/*    <Svg*/}
-                            {/*        width={53}*/}
-                            {/*        height={53}*/}
-                            {/*        viewBox="0 0 53 53"*/}
-                            {/*        fill="none"*/}
-                            {/*        xmlns="http://www.w3.org/2000/svg"*/}
-                            {/*    >*/}
-                            {/*        <G filter="url(#filter0_d_0_1)">*/}
-                            {/*            <Rect x={4} y={1} width={45} height={45} rx={10} fill="#fff"/>*/}
-                            {/*        </G>*/}
-                            {/*        <Path*/}
-                            {/*            d="M16 21.368h0a.373.373 0 01.247-.347s0 0 0 0l19.25-7h0a.376.376 0 01.481.481v.001l-7 19.25a.374.374 0 01-.344.247h-.009 0a.375.375 0 01-.348-.236h0l-3.361-8.402-.08-.199-.199-.08-8.4-3.36h-.001a.375.375 0 01-.236-.355z"*/}
-                            {/*            stroke="#000"*/}
-                            {/*        />*/}
-                            {/*        <Defs></Defs>*/}
-                            {/*    </Svg>*/}
-                            {/*}*/}
+                        {/*{!this.state.user_online_on_the_map && this.state.show_online_switch_button &&*/}
+                        {/*    <Svg*/}
+                        {/*        width={53}*/}
+                        {/*        height={53}*/}
+                        {/*        viewBox="0 0 53 53"*/}
+                        {/*        fill="none"*/}
+                        {/*        xmlns="http://www.w3.org/2000/svg"*/}
+                        {/*    >*/}
+                        {/*        <G filter="url(#filter0_d_0_1)">*/}
+                        {/*            <Rect x={4} y={1} width={45} height={45} rx={10} fill="#fff"/>*/}
+                        {/*        </G>*/}
+                        {/*        <Path*/}
+                        {/*            d="M16 21.368h0a.373.373 0 01.247-.347s0 0 0 0l19.25-7h0a.376.376 0 01.481.481v.001l-7 19.25a.374.374 0 01-.344.247h-.009 0a.375.375 0 01-.348-.236h0l-3.361-8.402-.08-.199-.199-.08-8.4-3.36h-.001a.375.375 0 01-.236-.355z"*/}
+                        {/*            stroke="#000"*/}
+                        {/*        />*/}
+                        {/*        <Defs></Defs>*/}
+                        {/*    </Svg>*/}
+                        {/*}*/}
 
 
-                            {/*{this.state.user_online_on_the_map && this.state.show_online_switch_button &&*/}
-                            {/*    <Svg*/}
-                            {/*        width={53}*/}
-                            {/*        height={53}*/}
-                            {/*        viewBox="0 0 53 53"*/}
-                            {/*        fill="none"*/}
-                            {/*        xmlns="http://www.w3.org/2000/svg"*/}
-                            {/*    >*/}
-                            {/*        <G filter="url(#filter0_d_168_7514)">*/}
-                            {/*            <Rect x={4} y={1} width={45} height={45} rx={10} fill="#fff"/>*/}
-                            {/*        </G>*/}
-                            {/*        <Path*/}
-                            {/*            d="M15.5 21.36a.875.875 0 00.55.827l8.401 3.36 3.361 8.403a.876.876 0 00.813.55h.014a.875.875 0 00.809-.576l7-19.25a.875.875 0 00-1.122-1.122l-19.25 7a.876.876 0 00-.576.809z"*/}
-                            {/*            fill="#F60"*/}
-                            {/*        />*/}
-                            {/*        <Defs></Defs>*/}
-                            {/*    </Svg>*/}
-                            {/*}*/}
+                        {/*{this.state.user_online_on_the_map && this.state.show_online_switch_button &&*/}
+                        {/*    <Svg*/}
+                        {/*        width={53}*/}
+                        {/*        height={53}*/}
+                        {/*        viewBox="0 0 53 53"*/}
+                        {/*        fill="none"*/}
+                        {/*        xmlns="http://www.w3.org/2000/svg"*/}
+                        {/*    >*/}
+                        {/*        <G filter="url(#filter0_d_168_7514)">*/}
+                        {/*            <Rect x={4} y={1} width={45} height={45} rx={10} fill="#fff"/>*/}
+                        {/*        </G>*/}
+                        {/*        <Path*/}
+                        {/*            d="M15.5 21.36a.875.875 0 00.55.827l8.401 3.36 3.361 8.403a.876.876 0 00.813.55h.014a.875.875 0 00.809-.576l7-19.25a.875.875 0 00-1.122-1.122l-19.25 7a.876.876 0 00-.576.809z"*/}
+                        {/*            fill="#F60"*/}
+                        {/*        />*/}
+                        {/*        <Defs></Defs>*/}
+                        {/*    </Svg>*/}
+                        {/*}*/}
                         {/*</TouchableOpacity>*/}
-                        <TouchableOpacity onPress={() => {this.getGeolocation()}}>
+                        <TouchableOpacity onPress={() => {
+                            this.getGeolocation()
+                        }}>
 
                             {this.state.show_online_text_balance &&
-                                <Svg
-                                    width={53}
-                                    height={53}
-                                    viewBox="0 0 53 53"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <G filter="url(#filter0_d_0_1)">
-                                        <Rect x={4} y={1} width={45} height={45} rx={10} fill="#fff"/>
-                                    </G>
-                                    <Path
-                                        d="M16 21.368h0a.373.373 0 01.247-.347s0 0 0 0l19.25-7h0a.376.376 0 01.481.481v.001l-7 19.25a.374.374 0 01-.344.247h-.009 0a.375.375 0 01-.348-.236h0l-3.361-8.402-.08-.199-.199-.08-8.4-3.36h-.001a.375.375 0 01-.236-.355z"
-                                        stroke="#000"
-                                    />
-                                    <Defs></Defs>
-                                </Svg>
+                            <Svg
+                                width={53}
+                                height={53}
+                                viewBox="0 0 53 53"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <G filter="url(#filter0_d_0_1)">
+                                    <Rect x={4} y={1} width={45} height={45} rx={10} fill="#fff"/>
+                                </G>
+                                <Path
+                                    d="M16 21.368h0a.373.373 0 01.247-.347s0 0 0 0l19.25-7h0a.376.376 0 01.481.481v.001l-7 19.25a.374.374 0 01-.344.247h-.009 0a.375.375 0 01-.348-.236h0l-3.361-8.402-.08-.199-.199-.08-8.4-3.36h-.001a.375.375 0 01-.236-.355z"
+                                    stroke="#000"
+                                />
+                                <Defs></Defs>
+                            </Svg>
                             }
 
 
                             {this.state.show_online_text &&
-                                <Svg
-                                    width={53}
-                                    height={53}
-                                    viewBox="0 0 53 53"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <G filter="url(#filter0_d_168_7514)">
-                                        <Rect x={4} y={1} width={45} height={45} rx={10} fill="#fff"/>
-                                    </G>
-                                    <Path
-                                        d="M15.5 21.36a.875.875 0 00.55.827l8.401 3.36 3.361 8.403a.876.876 0 00.813.55h.014a.875.875 0 00.809-.576l7-19.25a.875.875 0 00-1.122-1.122l-19.25 7a.876.876 0 00-.576.809z"
-                                        fill="#F60"
-                                    />
-                                    <Defs></Defs>
-                                </Svg>
+                            <Svg
+                                width={53}
+                                height={53}
+                                viewBox="0 0 53 53"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <G filter="url(#filter0_d_168_7514)">
+                                    <Rect x={4} y={1} width={45} height={45} rx={10} fill="#fff"/>
+                                </G>
+                                <Path
+                                    d="M15.5 21.36a.875.875 0 00.55.827l8.401 3.36 3.361 8.403a.876.876 0 00.813.55h.014a.875.875 0 00.809-.576l7-19.25a.875.875 0 00-1.122-1.122l-19.25 7a.876.876 0 00-.576.809z"
+                                    fill="#F60"
+                                />
+                                <Defs></Defs>
+                            </Svg>
                             }
                         </TouchableOpacity>
                     </View>
 
 
-
                 </View>
 
+                }
 
 
                 {this.state.makeUserOnlinePopup &&

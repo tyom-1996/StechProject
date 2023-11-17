@@ -443,12 +443,16 @@ export default class App extends Component {
         }
 
         await this.setState({
-            isOpenStartDatePicker: false,
-            isOpenStartTimePicker: true,
             dateOriginValue: new Date(event.nativeEvent.timestamp)
         })
 
 
+    }
+    saveDate = async () => {
+        await  this.setState({
+            isOpenStartDatePicker: false,
+            isOpenStartTimePicker: true,
+        })
     }
 
 
@@ -464,6 +468,11 @@ export default class App extends Component {
 
         await this.setState({
             startCompletedDate: moment(time).format("YYYY-MM-DD HH:mm:ss"),
+        })
+
+    }
+    saveTime = async () => {
+        await this.setState({
             isOpenStartTimePicker: false
         })
 
@@ -839,8 +848,6 @@ export default class App extends Component {
         }
 
 
-
-
         if (this.state.loaded_tender) {
             return (
                 <View style={{backgroundColor: '#ffffff', justifyContent: 'center', alignItems: 'center', alignSelf: 'center', width: '100%',  height: '100%' }}>
@@ -850,8 +857,6 @@ export default class App extends Component {
                 </View>
             )
         }
-
-
 
 
 
@@ -1172,9 +1177,9 @@ export default class App extends Component {
                             onChange={(event, timeOriginValue) => {this.onChangeDate(event, timeOriginValue)}}
                         />
 
-                        {/*<TouchableOpacity style={styles.save_btn} onPress={() => this.saveTimeOn()}>*/}
-                        {/*    <Text style={styles.save_btn_text}>Save</Text>*/}
-                        {/*</TouchableOpacity>*/}
+                        <TouchableOpacity style={styles.save_btn} onPress={() => this.saveDate()}>
+                            <Text style={styles.save_btn_text}>Сохранить</Text>
+                        </TouchableOpacity>
 
                     </View>
 
@@ -1194,6 +1199,9 @@ export default class App extends Component {
                               display={Platform.OS === 'ios' ? 'spinner' : 'default'}
                               onChange={(event, time) => {this.onChangeStartTimePicker(event, time)}}
                           />
+                          <TouchableOpacity style={styles.save_btn} onPress={() => this.saveTime()}>
+                              <Text style={styles.save_btn_text}>Сохранить</Text>
+                          </TouchableOpacity>
                       </View>
                   </View>
                 }
@@ -1577,6 +1585,20 @@ const styles = StyleSheet.create({
         // position: 'absolute',
         // zIndex: 9,
         // top: -1
+    },
+    save_btn_text: {
+        fontWeight: '700',
+        fontSize: 16,
+        color: '#ffffff',
+    },
+    save_btn: {
+        alignItems: 'center',
+        alignSelf: 'center',
+        justifyContent: 'center',
+        marginBottom: 20,
+        width: 250,
+        backgroundColor: '#FF6600',
+        borderRadius: 8,
+        height: 50,
     }
-
 });

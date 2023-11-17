@@ -477,7 +477,7 @@ export default class App extends Component {
                                                         <Text
                                                             style={styles.client_chat_item_info3}>{search_item.tender_name}</Text>
                                                         <Text
-                                                            style={styles.client_chat_item_info2}>{search_item.messages}</Text>
+                                                            style={styles.client_chat_item_info2} numberOfLines={3}>{search_item.messages}</Text>
                                                     </View>
                                                 </View>
                                                 <View
@@ -531,7 +531,7 @@ export default class App extends Component {
                                                         <Text
                                                             style={styles.client_chat_item_info3}>{chat_item.tender_name}</Text>
                                                         <Text
-                                                            style={styles.client_chat_item_info2}>{chat_item.messages}</Text>
+                                                            style={styles.client_chat_item_info2} numberOfLines={3}>{chat_item.messages}</Text>
                                                     </View>
                                                 </View>
                                                 <View

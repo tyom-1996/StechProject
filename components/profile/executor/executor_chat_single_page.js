@@ -1166,11 +1166,11 @@ const styles = StyleSheet.create({
         alignSelf: 'flex-end',
         backgroundColor: '#DEDEDE',
         borderRadius: 20,
-        maxWidth: 178,
+        maxWidth: '80%',
         marginBottom: 15,
         position: 'relative',
         zIndex: 1,
-        flex: 1,
+        // flex: 1,
 
     },
     client_chat_messages_item_get: {
@@ -1181,11 +1181,12 @@ const styles = StyleSheet.create({
         backgroundColor: '#FFB482',
         borderRadius: 20,
         marginBottom: 15,
-        flex: 1,
-        maxWidth: 178,
+        // flex: 1,
+        maxWidth: '80%',
         position: 'relative',
         zIndex: 1,
     },
+
     client_chat_message: {
         fontWeight: '400',
         fontSize: 17,

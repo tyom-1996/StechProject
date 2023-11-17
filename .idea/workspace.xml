@@ -20,13 +20,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c8e790e-0c5e-4bfa-a460-4864a2eb969e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/StechApp.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/profile/client/catalogue_product_single_page.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/profile/client/catalogue_product_single_page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/profile/client/client_chat.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/profile/client/client_chat.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/profile/client/client_chat_single_page.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/profile/client/client_chat_single_page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/profile/client/client_tender_chat_single_page.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/profile/client/client_tender_chat_single_page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/profile/client/client_tenders_chat.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/profile/client/client_tenders_chat.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/profile/client/create_an_order_form.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/profile/client/create_an_order_form.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/profile/executor/executor_catalogue_main_page.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/profile/executor/executor_catalogue_main_page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/profile/executor/executor_chat.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/profile/executor/executor_chat.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/profile/executor/executor_chat_single_page.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/profile/executor/executor_chat_single_page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/profile/executor/executor_tender_chat_single_page.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/profile/executor/executor_tender_chat_single_page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/profile/executor/executor_tenders_chat.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/profile/executor/executor_tenders_chat.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +53,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="yarn" />
@@ -186,6 +193,7 @@
       <workItem from="1700215865012" duration="635000" />
       <workItem from="1700229537819" duration="614000" />
       <workItem from="1700231113359" duration="775000" />
+      <workItem from="1700231943525" duration="12682000" />
     </task>
     <servers />
   </component>

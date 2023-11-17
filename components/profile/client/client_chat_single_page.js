@@ -956,7 +956,7 @@ export default class App extends Component {
                                         }
 
                                         {chat_item.file &&
-                                            <TouchableOpacity  style={[styles.client_chat_messages_item_send, {width: 130}]}
+                                            <TouchableOpacity  style={[styles.client_chat_messages_item_send,]}
                                                 onPress={() => this.openSenderImg(this.state.image_path + chat_item.file)}
                                             >
                                                     <Image style={{width: '100%', height: 63, resizeMode: 'cover'}} source={{uri: this.state.image_path + chat_item.file}}/>
@@ -1501,11 +1501,11 @@ const styles = StyleSheet.create({
         alignSelf: 'flex-end',
         backgroundColor: '#DEDEDE',
         borderRadius: 20,
-        maxWidth: 178,
+        maxWidth: '80%',
         marginBottom: 15,
         position: 'relative',
         zIndex: 1,
-        flex: 1,
+        // flex: 1,
     },
     client_chat_messages_item_get: {
         paddingHorizontal: 20,
@@ -1515,8 +1515,8 @@ const styles = StyleSheet.create({
         backgroundColor: '#FFB482',
         borderRadius: 20,
         marginBottom: 15,
-        flex: 1,
-        maxWidth: 178,
+        // flex: 1,
+        maxWidth: '80%',
         position: 'relative',
         zIndex: 1,
     },

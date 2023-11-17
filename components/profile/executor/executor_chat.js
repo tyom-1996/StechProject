@@ -493,7 +493,7 @@ export default class App extends Component {
                                 <Text style={styles.client_chat_item_info1}>{support_service.user_name}</Text>
 
                                 {support_service.messages &&
-                                <Text style={styles.client_chat_item_info2}>{support_service.messages}</Text>
+                                <Text style={styles.client_chat_item_info2} numberOfLines={3}>{support_service.messages}</Text>
                                 }
 
                                 {support_service.file &&
@@ -555,7 +555,7 @@ export default class App extends Component {
                                                             style={styles.client_chat_item_info1}>{search_item.user_name}</Text>
 
                                                         {search_item.messages &&
-                                                             <Text style={styles.client_chat_item_info2}>{search_item.messages}</Text>
+                                                             <Text style={styles.client_chat_item_info2} numberOfLines={3}>{search_item.messages}</Text>
                                                         }
 
 
@@ -619,7 +619,7 @@ export default class App extends Component {
                                                         <Text style={styles.client_chat_item_info1}>{chat_item.user_name}</Text>
 
                                                         {chat_item.messages &&
-                                                        <Text style={styles.client_chat_item_info2}>{chat_item.messages}</Text>
+                                                        <Text style={styles.client_chat_item_info2} numberOfLines={3}>{chat_item.messages}</Text>
                                                         }
 
 
@@ -656,7 +656,7 @@ export default class App extends Component {
 
 
                 {this.state.keyboardOpen === false &&
-                <View style={styles.footer}>
+                     <View style={styles.footer}>
                     <TouchableOpacity style={[styles.footer_btn, {position: 'relative'}]} onPress={() => {
                         this.redirectToExecutorNotifications()
                     }}>

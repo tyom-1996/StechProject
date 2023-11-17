@@ -493,7 +493,7 @@ export default class App extends Component {
                                                             <Text style={styles.client_chat_item_info1}>{search_item.user_name}</Text>
                                                             <Text style={styles.client_chat_item_info3}>{search_item.tender_name}</Text>
                                                             {search_item.messages &&
-                                                            <Text style={styles.client_chat_item_info2}>{search_item.messages}</Text>
+                                                            <Text style={styles.client_chat_item_info2} numberOfLines={3}>{search_item.messages}</Text>
                                                             }
                                                             {search_item.image &&
                                                             <Image style={{width: 33, height: 35}} source={{uri: this.state.image_path + search_item.image}}/>
@@ -548,7 +548,7 @@ export default class App extends Component {
                                                             <Text style={styles.client_chat_item_info1}>{chat_item.user_name}</Text>
                                                             <Text style={styles.client_chat_item_info3}>{chat_item.tender_name}</Text>
                                                             {chat_item.messages &&
-                                                            <Text style={styles.client_chat_item_info2}>{chat_item.messages}</Text>
+                                                            <Text style={styles.client_chat_item_info2} numberOfLines={3}>{chat_item.messages}</Text>
                                                             }
                                                             {chat_item.image &&
                                                             <Image style={{width: 33, height: 35}} source={{uri: this.state.image_path + chat_item.image}}/>

@@ -702,9 +702,9 @@ const styles = StyleSheet.create({
         borderRadius: 6,
         backgroundColor: '#ffffff',
         paddingHorizontal: 10,
-        paddingVertical: 10,
+        paddingVertical: 20,
         width: '100%',
-        height: 87,
+        // height: 87,
         flexDirection: 'row',
         flexWrap: 'wrap'
         // alignItems: 'center'
