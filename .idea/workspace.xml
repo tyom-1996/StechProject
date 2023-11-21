@@ -21,18 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="2c8e790e-0c5e-4bfa-a460-4864a2eb969e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/profile/client/catalogue_product_single_page.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/profile/client/catalogue_product_single_page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/profile/client/client_chat.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/profile/client/client_chat.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/profile/client/client_chat_single_page.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/profile/client/client_chat_single_page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/profile/client/client_tender_chat_single_page.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/profile/client/client_tender_chat_single_page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/profile/client/client_tenders_chat.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/profile/client/client_tenders_chat.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/profile/client/create_an_order_form.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/profile/client/create_an_order_form.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/profile/executor/executor_catalogue_main_page.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/profile/executor/executor_catalogue_main_page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/profile/executor/executor_chat.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/profile/executor/executor_chat.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/profile/executor/executor_chat_single_page.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/profile/executor/executor_chat_single_page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/profile/executor/executor_tender_chat_single_page.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/profile/executor/executor_tender_chat_single_page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/profile/executor/executor_tenders_chat.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/profile/executor/executor_tenders_chat.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/profile/client/executors_lists.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/profile/client/executors_lists.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/profile/client/executors_lists_without_category.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/profile/client/executors_lists_without_category.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -193,7 +183,11 @@
       <workItem from="1700215865012" duration="635000" />
       <workItem from="1700229537819" duration="614000" />
       <workItem from="1700231113359" duration="775000" />
-      <workItem from="1700231943525" duration="12682000" />
+      <workItem from="1700231943525" duration="13262000" />
+      <workItem from="1700404677536" duration="2502000" />
+      <workItem from="1700408209949" duration="49000" />
+      <workItem from="1700566548413" duration="6954000" />
+      <workItem from="1700573938795" duration="1323000" />
     </task>
     <servers />
   </component>
@@ -217,14 +211,14 @@
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="477" y="210" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.816@0.0.1536.816" timestamp="1694601265711" />
-    <state x="549" y="163" key="FileChooserDialogImpl" timestamp="1700231940479">
+    <state x="549" y="163" key="FileChooserDialogImpl" timestamp="1700408257044">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state x="549" y="163" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1700231940479" />
-    <state x="397" y="132" width="579" height="558" key="find.popup" timestamp="1699815849984">
+    <state x="549" y="163" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1700408257044" />
+    <state x="397" y="132" width="579" height="558" key="find.popup" timestamp="1700570820260">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state x="397" y="132" width="579" height="558" key="find.popup/0.0.1536.816@0.0.1536.816" timestamp="1699815849984" />
+    <state x="397" y="132" width="579" height="558" key="find.popup/0.0.1536.816@0.0.1536.816" timestamp="1700570820260" />
     <state x="425" y="185" key="run.anything.popup" timestamp="1699815155279">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
@@ -254,17 +248,17 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/components/profile/client/executors_lists.js</url>
-          <line>1205</line>
+          <line>1209</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/components/profile/client/executors_lists.js</url>
-          <line>859</line>
+          <line>862</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/components/profile/client/executors_lists.js</url>
-          <line>1304</line>
+          <line>1308</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
@@ -324,7 +318,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/components/profile/client/executors_lists.js</url>
-          <line>1410</line>
+          <line>1414</line>
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
@@ -361,6 +355,11 @@
           <url>file://$PROJECT_DIR$/components/profile/executor/personal_area_executor.js</url>
           <line>54</line>
           <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/components/profile/client/executors_lists_without_category.js</url>
+          <line>854</line>
+          <option name="timeStamp" value="29" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

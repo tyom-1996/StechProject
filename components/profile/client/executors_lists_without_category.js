@@ -133,7 +133,11 @@ export default class App extends Component {
         );
 
         const { navigation } = this.props;
+
+        console.log(this.props.category_id, this.props.subcategory_id)
+
         this.getNotificationsCount();
+
         if (this.props.category_id && this.props.subcategory_id !== null) {
 
             this.getExecutorsList();
@@ -462,6 +466,7 @@ export default class App extends Component {
     }
 
     getExecutorsListWithoutSubCategoryId = async () => {
+
         // alert('boooooooooo')
         let category_id = this.props.category_id
         let subcategory_id = this.props.subcategory_id;
@@ -501,17 +506,21 @@ export default class App extends Component {
         let AuthStr = 'Bearer ' + userToken;
 
 
+        console.log(AuthStr, 'token')
 
         let req = {
             category_id: category_id,
             latitude: location?.coords?.latitude,
             longitude: location?.coords?.longitude,
         };
+        console.log(req, 'req')
+
 
         // if (subcategory_id)
         // {
         //     Object.assign(req, {sub_category_id: subcategory_id})
         // }
+
 
 
         try {
@@ -530,6 +539,7 @@ export default class App extends Component {
             }).then( async (response) => {
 
 
+
                 console.log(response?.message?.users?.data, 'bnssssssasbbbbbbbbbbbbbbbbbbbbbbb')
                 await this.setState({
                     // loaded_list: false,
@@ -540,11 +550,11 @@ export default class App extends Component {
                 if (response?.status === true)
                 {
 
-                    if (response?.reklam) {
-
-                        this.reklam = response.message.reklam
-
-                    }
+                    // if (response?.reklam) {
+                    //
+                    //     this.reklam = response?.message.reklam
+                    //
+                    // }
                     if (response?.message?.users?.data)
                     {
 
@@ -560,7 +570,7 @@ export default class App extends Component {
 
                 }
 
-
+                // return false;
 
                 if (response?.message?.users?.next_page_url) {
                     if (response?.message?.users?.next_page_url) {
@@ -579,7 +589,6 @@ export default class App extends Component {
                             current_page: response?.message?.users?.current_page,
                         })
                     }
-
                     if (response?.message?.users?.last_page) {
                         this.setState({
                             last_page: response?.message?.users?.last_page,
@@ -688,71 +697,70 @@ export default class App extends Component {
 
     renderItem  = ({item}) => {
 
-        console.log(item, 'itemitem')
+        // console.log(item?.user_transport[0]?.user_transport_category?.category_name, 'itemitem')
 
-        if (item.reklam)
+        if (item?.reklam)
         {
+
+
+            console.log(item?.name,'item?.name')
 
             return (
                 <View>
-                    <TouchableOpacity
-                        style={styles.executor_list_item}
-                        onPress={() => {this.redirectToClientCatalogueSinglePage(item.id)}}
-                    >
+                    {/*<TouchableOpacity*/}
+                    {/*    style={styles.executor_list_item}*/}
+                    {/*    onPress={() => {this.redirectToClientCatalogueSinglePage(item?.reklam?.id)}}*/}
+                    {/*>*/}
+                    {/*    <View style={styles.executor_list_item_img_name_rating_info_wrapper}>*/}
+                    {/*        <View style={styles.executor_list_item_img_name_wrapper}>*/}
+                    {/*            <View style={styles.executor_list_item_img}>*/}
+                    {/*                <Image style={styles.executor_list_item_img_child} source={{uri: this.state.image_path + item?.reklam?.photo}}/>*/}
+                    {/*            </View>*/}
+                    {/*            <View style={styles.executor_list_item_name_category_info_wrapper}>*/}
+                    {/*                <Text style={styles.executor_list_item_name}>{item?.reklam?.name} {item?.reklam?.surname}</Text>*/}
+                    {/*                /!*<Text style={styles.executor_list_item_category_info}>Тип техники - {item?.reklam?.user_transport[0]?.user_transport_category?.category_name}</Text>*!/*/}
+                    {/*            </View>*/}
 
-                        <View style={styles.executor_list_item_img_name_rating_info_wrapper}>
-                            <View style={styles.executor_list_item_img_name_wrapper}>
-                                <View style={styles.executor_list_item_img}>
-                                    <Image style={styles.executor_list_item_img_child} source={{uri: this.state.image_path + item?.photo}}/>
-                                </View>
-                                <View style={styles.executor_list_item_name_category_info_wrapper}>
-                                    <Text style={styles.executor_list_item_name}>{item?.name} {item?.surname}</Text>
-                                    <Text style={styles.executor_list_item_category_info}>Тип техники - {item?.user_transport[0]?.sub_category_name ? item?.user_transport[0]?.sub_category_name : item?.user_transport[0]?.category_name}</Text>
-                                </View>
+                    {/*        </View>*/}
 
-                            </View>
 
-                            <View style={styles.executor_list_item_rating_info_box}>
-                                <Text style={styles.executor_list_item_rating_info}>{item?.role_id3_reviews_avg_grade ? parseFloat(item?.role_id3_reviews_avg_grade).toFixed(1) : '5.0' } </Text>
-                            </View>
+                    {/*        <View style={styles.executor_list_item_rating_info_box}>*/}
+                    {/*            <Text style={styles.executor_list_item_rating_info}>{item?.reklam?.role_id3_reviews_avg_grade ? parseFloat(item?.reklam?.role_id3_reviews_avg_grade).toFixed(1) : '5.0' } </Text>*/}
+                    {/*        </View>*/}
 
-                        </View>
+                    {/*    </View>*/}
+                    {/*    <ScrollView horizontal={true} nestedScrollEnabled = {true} style={{width: '100%', marginBottom: 15}}>*/}
 
-                        <ScrollView horizontal={true} nestedScrollEnabled = {true} style={{width: '100%', marginBottom: 15}}>
+                    {/*        {item?.reklam?.user_transport?.length > 0 && item?.reklam?.user_transport[0]?.transpor_photo?.map((transport_img, index) => {*/}
+                    {/*            return (*/}
+                    {/*                <View style={[styles.transport_img]} key={index}>*/}
+                    {/*                    <Image style={[styles.transport_img_child]}  source={{uri: this.state.image_path + transport_img?.photo}} />*/}
+                    {/*                </View>*/}
+                    {/*            )*/}
+                    {/*        })}*/}
+                    {/*    </ScrollView>*/}
+                    {/*    <View style={styles.executor_list_item_distance_hour_money_info}>*/}
+                    {/*        <View style={styles.executor_list_item_distance_info_box}>*/}
+                    {/*            <View style={styles.executor_list_item_distance_info_icon}>*/}
+                    {/*                <Svg*/}
+                    {/*                    xmlns="http://www.w3.org/2000/svg"*/}
+                    {/*                    width={19}*/}
+                    {/*                    height={19}*/}
+                    {/*                    viewBox="0 0 19 19"*/}
+                    {/*                    fill="none"*/}
+                    {/*                >*/}
+                    {/*                    <Path*/}
+                    {/*                        d="M9.5 1.188a6.539 6.539 0 00-6.531 6.53 6.465 6.465 0 001.316 3.92s.178.234.207.268L9.5 17.812l5.01-5.91c.027-.03.206-.264.206-.264v-.002a6.463 6.463 0 001.315-3.917A6.54 6.54 0 009.5 1.187zm0 8.906a2.375 2.375 0 110-4.75 2.375 2.375 0 010 4.75z"*/}
+                    {/*                        fill="#000"*/}
+                    {/*                    />*/}
+                    {/*                </Svg>*/}
+                    {/*            </View>*/}
+                    {/*            <Text style={styles.executor_list_item_distance_info}>{this.getDistance(item?.reklam?.distance)} км от вас</Text>*/}
 
-                            {item?.user_transport[0]?.transpor_photo.map((transport_img, index) => {
-                                return (
-                                    <View style={[styles.transport_img]} key={index}>
-                                        <Image style={[styles.transport_img_child]}  source={{uri: this.state.image_path + transport_img?.photo}} />
-                                    </View>
-                                )
-                            })}
-                        </ScrollView>
-
-                        <View style={styles.executor_list_item_distance_hour_money_info}>
-                            <View style={styles.executor_list_item_distance_info_box}>
-                                <View style={styles.executor_list_item_distance_info_icon}>
-                                    <Svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        width={19}
-                                        height={19}
-                                        viewBox="0 0 19 19"
-                                        fill="none"
-                                    >
-                                        <Path
-                                            d="M9.5 1.188a6.539 6.539 0 00-6.531 6.53 6.465 6.465 0 001.316 3.92s.178.234.207.268L9.5 17.812l5.01-5.91c.027-.03.206-.264.206-.264v-.002a6.463 6.463 0 001.315-3.917A6.54 6.54 0 009.5 1.187zm0 8.906a2.375 2.375 0 110-4.75 2.375 2.375 0 010 4.75z"
-                                            fill="#000"
-                                        />
-                                    </Svg>
-                                </View>
-                                <Text style={styles.executor_list_item_distance_info}>{this.getDistance(item?.distance)} км от вас</Text>
-
-                            </View>
-                            <Text  style={styles.executor_list_item_hour_money_info}>{item?.priceJob} руб./{ this.checkType(item)} </Text>
-
-                        </View>
-
-                    </TouchableOpacity>
+                    {/*        </View>*/}
+                    {/*        <Text  style={styles.executor_list_item_hour_money_info}>{item?.reklam?.priceJob} руб./ {this.checkType(item)}</Text>*/}
+                    {/*    </View>*/}
+                    {/*</TouchableOpacity>*/}
 
 
                     {/*{reklam_first != null &&*/}
@@ -765,7 +773,6 @@ export default class App extends Component {
                             </Text>
                         </View>
                         {item?.reklam?.description  &&
-
                             <Text style={styles.reklam_decription}>{item?.reklam?.description}</Text>
                         }
 
@@ -824,10 +831,11 @@ export default class App extends Component {
                             </View>
                             <View style={styles.executor_list_item_name_category_info_wrapper}>
                                 <Text style={styles.executor_list_item_name}>{item?.name} {item?.surname}</Text>
-                                <Text style={styles.executor_list_item_category_info}>Тип техники - {item?.user_transport[0]?.sub_category_name ? item?.user_transport[0]?.sub_category_name : item?.user_transport[0]?.category_name}</Text>
+                                <Text style={styles.executor_list_item_category_info}>Тип техники - {item?.user_transport[0]?.user_transport_category?.category_name}</Text>
                             </View>
 
                         </View>
+
 
                         <View style={styles.executor_list_item_rating_info_box}>
                             <Text style={styles.executor_list_item_rating_info}>{item?.role_id3_reviews_avg_grade ? parseFloat(item?.role_id3_reviews_avg_grade).toFixed(1) : '5.0' } </Text>
@@ -836,7 +844,7 @@ export default class App extends Component {
                     </View>
                     <ScrollView horizontal={true} nestedScrollEnabled = {true} style={{width: '100%', marginBottom: 15}}>
 
-                        {item?.user_transport?.length > 0 && item?.user_transport[0]?.transpor_photo.map((transport_img, index) => {
+                        {item?.user_transport?.length > 0 && item?.user_transport[0]?.transpor_photo?.map((transport_img, index) => {
                             return (
                                 <View style={[styles.transport_img]} key={index}>
                                     <Image style={[styles.transport_img_child]}  source={{uri: this.state.image_path + transport_img?.photo}} />

@@ -648,8 +648,9 @@ export default class App extends Component {
     getSubCategoriesTransports = async (item) => {
 
 
-        let category_id = item.id;
-        let category_name = item.category_name;
+        let category_id = item?.id;
+        let category_name = item?.category_name;
+
 
         this.setState({
             category_id: category_id,
@@ -685,6 +686,8 @@ export default class App extends Component {
                         subcategory_id: null,
                         show_categories: false,
                     })
+
+
 
                     this.props.navigation.navigate("ExecutorsListsWithoutCategory", {
                         params1: null,
@@ -945,7 +948,8 @@ export default class App extends Component {
                                </View>
                                <View style={styles.executor_list_item_name_category_info_wrapper}>
                                    <Text style={styles.executor_list_item_name}>{item.name} {item.surname}</Text>
-                                   <Text style={styles.executor_list_item_category_info}>Тип техники - {item.user_transport[0].sub_category_name ? item.user_transport[0].sub_category_name : item.user_transport[0].category_name}</Text>
+                                   {/*<Text style={styles.executor_list_item_category_info}>Тип техники - {item.user_transport[0].sub_category_name ? item.user_transport[0].sub_category_name : item.user_transport[0].category_name}</Text>*/}
+                                   <Text style={styles.executor_list_item_category_info}>Тип техники - {item?.user_transport[0]?.sub_category_name}</Text>
                                </View>
 
                            </View>
